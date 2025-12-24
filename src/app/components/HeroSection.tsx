@@ -26,21 +26,21 @@ export function HeroSection() {
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
               <span className="text-white/90 text-sm">⭐ #1 Local Service Platform</span>
             </div>
-            <div className="w-px h-4 bg-white/20"></div>
-            <span className="text-white/70 text-sm">Trusted by 50,000+ Indians</span>
+                <div className="w-px h-4 bg-white/20"></div>
+                <span className="text-white/70 text-sm">Trusted by many peoples</span>
           </div>
         </div>
 
         {/* Main Headline */}
         <div className="text-center max-w-5xl mx-auto pb-12">
           <h1 className="text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight">
-            Book Local Services With
+            Book Services With
             <br />
-            <span className="text-[#00A8E8]">Zynexx</span> Platform
+            <span className="text-[#00A8E8]">Zynexx</span>
           </h1>
           
           <p className="text-xl text-white/70 mb-10 leading-relaxed max-w-3xl mx-auto">
-            Connect with verified maids, cooks, drivers, get groceries from local kirana stores, and book event services—all in one trusted platform.
+            Connect with verified maids, cooks, drivers, get groceries from local kirana stores, and book Professional services—all in one trusted platform.
           </p>
           
           {/* Search Bar */}
@@ -64,24 +64,24 @@ export function HeroSection() {
                 </Button>
               </div>
             </div>
-            <p className="text-white/50 text-sm mt-4">🎯 Available in 15+ cities across India</p>
+            <p className="text-white text-sm mt-4">🎯 Currently Available in Jaipur</p>
           </div>
 
           {/* Trust Logos */}
-          <div className="flex flex-wrap items-center justify-center gap-8 mb-16 opacity-60">
-            <div className="text-white/60 text-sm flex items-center gap-2">
-              <Award className="text-[#00a8e8]" size={24} />
+          <div className="flex flex-wrap items-center justify-center gap-8 mb-16">
+            <div className="text-white text-sm flex items-center gap-2">
+              <Award className="text-[#00A8E8]" size={24} />
               <span>Featured in</span>
             </div>
-            <div className="text-white/60 text-sm flex items-center gap-2">
+            <div className="text-white text-sm flex items-center gap-2">
               <Shield className="text-[#00A8E8]" size={24} />
               <span>Trusted by</span>
             </div>
-            <div className="text-white/60 text-sm flex items-center gap-2">
+            <div className="text-white text-sm flex items-center gap-2">
               <CheckCircle className="text-[#00A8E8]" size={24} />
               <span>Verified by</span>
             </div>
-            <div className="text-white/60 text-sm flex items-center gap-2">
+            <div className="text-white text-sm flex items-center gap-2">
               <TrendingUp className="text-[#00A8E8]" size={24} />
               <span>Backed by</span>
             </div>

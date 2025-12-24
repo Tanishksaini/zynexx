@@ -1,4 +1,4 @@
-import { Mail, Phone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, Facebook, Twitter, Instagram, Linkedin, MapPin } from 'lucide-react';
 
 export function Footer() {
   const scrollToSection = (id: string) => {
@@ -62,8 +62,7 @@ export function Footer() {
               <li className="hover:text-white transition-colors cursor-pointer">Helperr4U</li>
               <li className="hover:text-white transition-colors cursor-pointer">Kirana4U</li>
               <li className="hover:text-white transition-colors cursor-pointer">Service4U</li>
-              <li className="hover:text-white transition-colors cursor-pointer">Home Helpers</li>
-           
+              
             </ul>
           </div>
 
@@ -71,21 +70,29 @@ export function Footer() {
           <div>
             <h4 className="mb-6 text-lg">Contact Us</h4>
             <ul className="space-y-4 text-gray-400 text-sm mb-6">
-              <li className="flex items-center gap-3 group">
-                <div className="bg-white/10 p-2 rounded-lg group-hover:bg-white/20 transition-colors">
-                  <Mail size={16} />
-                </div>
-                <a href="mailto:support@zynexx.com" className="hover:text-white transition-colors">
-                  support@zynexx.com
-                </a>
-              </li>
-              <li className="flex items-center gap-3 group">
-                <div className="bg-white/10 p-2 rounded-lg group-hover:bg-white/20 transition-colors">
+              <li className="flex items-start gap-3 group">
+                <div className="bg-white/10 p-2 rounded-lg group-hover:bg-white/20 transition-colors mt-0.5 flex-shrink-0">
                   <Phone size={16} />
                 </div>
-                <a href="tel:+911234567890" className="hover:text-white transition-colors">
-                  +91 123 456 7890
+                <a href="tel:+917073448187" className="hover:text-white transition-colors">
+                  +91 7073448187
                 </a>
+              </li>
+              <li className="flex items-start gap-3 group">
+                <div className="bg-white/10 p-2 rounded-lg group-hover:bg-white/20 transition-colors mt-0.5 flex-shrink-0">
+                  <Mail size={16} />
+                </div>
+                <a href="mailto:contect@zynexxindia.com" className="hover:text-white transition-colors">
+                  contect@zynexxindia.com
+                </a>
+              </li>
+              <li className="flex items-start gap-3 group">
+                <div className="bg-white/10 p-2 rounded-lg group-hover:bg-white/20 transition-colors mt-0.5 flex-shrink-0">
+                  <MapPin size={16} />
+                </div>
+                <span className="hover:text-white transition-colors">
+                  55/207, Rajat Path, Mansarovar, Jaipur 302020
+                </span>
               </li>
             </ul>
 

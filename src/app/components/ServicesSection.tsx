@@ -1,4 +1,4 @@
-import { Users, ShoppingBag, Sparkles, ArrowRight, ChefHat, Baby, HeartPulse, Car, Package, Music } from 'lucide-react';
+import { Users, ShoppingBag, Sparkles, ArrowRight, ChefHat, Baby, HeartPulse, Car, Package, Music, Home, Wand2 } from 'lucide-react';
 
 export function ServicesSection() {
   const services = [
@@ -10,26 +10,15 @@ export function ServicesSection() {
       color: 'indigo',
       image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
       services: [
-        { icon: Users, name: 'Maid' },
-        { icon: ChefHat, name: 'Cook' },
-        { icon: Baby, name: 'Nanny / Babysitter' },
-        { icon: HeartPulse, name: 'Elder Care' },
-        { icon: HeartPulse, name: 'Patient Care' },
-        { icon: Car, name: 'Driver' }
-      ]
-    },
-    {
-      title: 'Kirana4U',
-      subtitle: 'Local Grocery Delivery',
-      description: 'Fresh groceries from your trusted neighborhood stores',
-      icon: ShoppingBag,
-      color: 'green',
-      image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
-      services: [
-        { icon: ShoppingBag, name: 'Order from nearby stores' },
-        { icon: Package, name: 'Open/loose items available' },
-        { icon: Package, name: 'Lightning fast delivery' },
-        { icon: Package, name: 'Support local businesses' }
+        { name: 'Maid', icon: Home },
+        { name: 'Cook', icon: ChefHat },
+        { name: 'Baby Sitter', icon: Baby },
+        { name: 'Driver', icon: Car },
+        { name: 'Elder Care', icon: HeartPulse },
+        { name: 'Nanny', icon: Baby },
+        { name: 'Patient Care', icon: HeartPulse },
+        { name: 'Shop Helper', icon: Package },
+        { name: 'Cleaning Service', icon: Sparkles }
       ]
     },
     {
@@ -40,10 +29,26 @@ export function ServicesSection() {
       color: 'purple',
       image: 'https://images.unsplash.com/photo-1519741497674-611481863552?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
       services: [
-        { icon: Sparkles, name: 'Makeup Artist' },
-        { icon: Sparkles, name: 'Mehndi Artist' },
-        { icon: Music, name: 'Choreographer' },
-       
+        { name: 'Makeup Artist', icon: Wand2 },
+        { name: 'Parlor Service', icon: Sparkles },
+        { name: 'Mehandi Artist', icon: Wand2 },
+        { name: 'Choreographer', icon: Music },
+        { name: 'Laundry Wala', icon: Package },
+        { name: 'Press Wala', icon: Package }
+      ]
+    },
+    {
+      title: 'Kirana4U',
+      subtitle: 'Local Grocery Delivery',
+      description: 'Fresh groceries from your trusted neighborhood stores',
+      icon: ShoppingBag,
+      color: 'green',
+      image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
+      badge: 'Coming Soon',
+      services: [
+        { name: 'Nearby Local Store', icon: ShoppingBag },
+        { name: 'Delivery Mode: Instant, Express, Standard', icon: Package },
+        { name: '99% availability of products', icon: Package }
       ]
     }
   ];
@@ -59,12 +64,8 @@ export function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-block bg-cyan-100 text-[#00A8E8] px-4 py-1.5 rounded-full text-sm mb-4">
+          <h2 className="text-5xl md:text-6xl text-[#00A8E8] mb-4">
             Our Services
-          </div>
-          <h2 className="text-4xl md:text-5xl text-gray-900 mb-4">
-            Everything you need,
-            <span className="block text-[#00A8E8] mt-2">all in one place</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Browse our comprehensive range of verified local services
@@ -101,19 +102,24 @@ export function ServicesSection() {
                 <div className="p-8 flex flex-col flex-grow">
                   <div className="mb-6">
                     <div className="text-xs text-gray-500 uppercase tracking-wide mb-2">{service.subtitle}</div>
-                    <h3 className="text-2xl text-gray-900 mb-2">{service.title}</h3>
+                    <div className="flex items-center gap-3 mb-2">
+                      <h3 className="text-2xl text-gray-900">{service.title}</h3>
+                      {service.badge && (
+                        <span className={`px-4 py-1.5 rounded-full text-xs font-semibold ${colors.bg} text-white shadow-md`}>
+                          {service.badge}
+                        </span>
+                      )}
+                    </div>
                     <p className="text-gray-600">{service.description}</p>
                   </div>
 
                   {/* Services List */}
-                  <ul className="space-y-3 mb-6 flex-grow">
+                  <ul className="space-y-2 mb-6 flex-grow">
                     {service.services.map((item, idx) => {
                       const ItemIcon = item.icon;
                       return (
-                        <li key={idx} className="flex items-center gap-3 text-sm text-gray-700">
-                          <div className={`${colors.light} p-1.5 rounded-lg`}>
-                            <ItemIcon className={colors.text} size={16} />
-                          </div>
+                        <li key={idx} className="flex items-start gap-3 text-sm text-gray-700">
+                          <ItemIcon className={`${colors.text} mt-0.5 flex-shrink-0`} size={16} />
                           <span>{item.name}</span>
                         </li>
                       );
