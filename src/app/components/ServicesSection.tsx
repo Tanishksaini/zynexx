@@ -33,7 +33,7 @@ export function ServicesSection() {
       ]
     },
     {
-      title: 'Service4UU',
+      title: 'Service4U',
       subtitle: 'Event & Personal Services',
       description: 'Professional services for your special occasions',
       icon: Sparkles,
@@ -43,7 +43,7 @@ export function ServicesSection() {
         { icon: Sparkles, name: 'Makeup Artist' },
         { icon: Sparkles, name: 'Mehndi Artist' },
         { icon: Music, name: 'Choreographer' },
-        { icon: Sparkles, name: 'Event Planning' }
+       
       ]
     }
   ];

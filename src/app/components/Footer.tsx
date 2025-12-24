@@ -61,9 +61,9 @@ export function Footer() {
             <ul className="space-y-3 text-gray-400 text-sm">
               <li className="hover:text-white transition-colors cursor-pointer">Helperr4U</li>
               <li className="hover:text-white transition-colors cursor-pointer">Kirana4U</li>
-              <li className="hover:text-white transition-colors cursor-pointer">Service4UU</li>
+              <li className="hover:text-white transition-colors cursor-pointer">Service4U</li>
               <li className="hover:text-white transition-colors cursor-pointer">Home Helpers</li>
-              <li className="hover:text-white transition-colors cursor-pointer">Event Services</li>
+           
             </ul>
           </div>
 

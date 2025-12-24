@@ -19,7 +19,7 @@ export function TestimonialsSection() {
     {
       name: 'Anita Desai',
       role: 'Working Professional, Bangalore',
-      content: 'Booked a makeup artist for my wedding through Service4UU. Professional service and transparent pricing. Highly recommend!',
+      content: 'Booked a makeup artist for my wedding through Service4U. Professional service and transparent pricing. Highly recommend!',
       rating: 5,
       image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=150'
     }

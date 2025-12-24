@@ -1,4 +1,4 @@
-import { ArrowRight, Search, MapPin, Star, Clock, CheckCircle } from 'lucide-react';
+import { ArrowRight, Search, MapPin, Star, Clock, CheckCircle, Award, Shield, TrendingUp, Zap } from 'lucide-react';
 import { Button } from './ui/button';
 
 export function HeroSection() {
@@ -70,19 +70,19 @@ export function HeroSection() {
           {/* Trust Logos */}
           <div className="flex flex-wrap items-center justify-center gap-8 mb-16 opacity-60">
             <div className="text-white/60 text-sm flex items-center gap-2">
-              <div className="w-8 h-8 bg-white/10 rounded-lg"></div>
+              <Award className="text-[#00a8e8]" size={24} />
               <span>Featured in</span>
             </div>
             <div className="text-white/60 text-sm flex items-center gap-2">
-              <div className="w-8 h-8 bg-white/10 rounded-lg"></div>
+              <Shield className="text-[#00A8E8]" size={24} />
               <span>Trusted by</span>
             </div>
             <div className="text-white/60 text-sm flex items-center gap-2">
-              <div className="w-8 h-8 bg-white/10 rounded-lg"></div>
+              <CheckCircle className="text-[#00A8E8]" size={24} />
               <span>Verified by</span>
             </div>
             <div className="text-white/60 text-sm flex items-center gap-2">
-              <div className="w-8 h-8 bg-white/10 rounded-lg"></div>
+              <TrendingUp className="text-[#00A8E8]" size={24} />
               <span>Backed by</span>
             </div>
           </div>
